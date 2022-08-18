@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Inside</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Let us handle your <span class="font-semibold text-emerald-500">money
+                safely</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-3 md:grid-cols-1 mx-auto w-3/5 gap-6">
+                <div class="bg-green-600 p-8 text-white rounded-xl text-center">
+                    <h3 class="text-3xl">Deposite</h3>
+                    <h2 class="text-5xl">$<span id="deposite_total">00</span></h2>
+                </div>
+                <div class="bg-amber-600 p-8 text-center text-white rounded-xl">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdraw_total">00</span></h2>
+                </div>
+                <div class="bg-blue-600 p-8 text-center text-white rounded-xl">
+                    <h3 class="text-3xl">Current Balance</h3>
+                    <h2 class="text-5xl">$<span id="balance_total">00</span></h2>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- deposit and withdraw section -->
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 mx-auto w-3/5 gap-6">
+                <div class="bg-teal-300 p-8 rounded-xl text-center">
+                    <h3 class="text-3xl mb-6 font-semibold text-white">Please deposite</h3>
+
+
+                    <input class="mb-4 mx-auto w-9/12 px-3 block font-semibold " type="text" name="" id="deposite"
+                        placeholder="$ amount you want to deposite">
+
+
+
+                    <button id="btn-deposite"
+                        class="bg-amber-500 hover:bg-orange-600 px-8 text-white py-1 rounded-lg mb-6 font-semibold text-white">Deposite</button>
+
+
+
+                </div>
+                <div class="bg-pink-400 p-8 rounded-xl text-center">
+                    <h3 class="text-3xl mb-6 font-semibold text-white">Please withdraw</h3>
+
+
+                    <input class="mb-4 mx-auto w-9/12 px-3 block font-semibold " type="text" name="" id="withdraw"
+                        placeholder="$ amount you want to withdraw">
+
+
+
+                    <button id="btn-withdraw"
+                        class="bg-amber-500 hover:bg-orange-600 px-8 text-white py-1 rounded-lg mb-6 font-semibold text-white">Withdraw</button>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+
+</body>
+
+</html>
